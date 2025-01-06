@@ -325,6 +325,7 @@ color: #434455;
 .listben:last-child{
     margin-bottom: 96px;    
 }
+/* нажаль не розібрався як вирівняти секцію номер 2 */
 @media (min-width: 768px){
     .container .benefits{
     max-height: 312px;
