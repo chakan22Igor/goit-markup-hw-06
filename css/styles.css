@@ -1166,7 +1166,18 @@ input:focus + .modal-input-icon{
     border: none;
 }
 @media (min-width: 768px){
-    .modal-overlay.is-open .modal{
+    .modal-overlay .modal{
+        width: 408px;
+        height: 584px;
+    }
+    .mobile-menu.is-open{
+        display: none;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
+@media (min-width: 1158px){
+    .modal-overlay .modal{
         width: 408px;
         height: 584px;
     }
