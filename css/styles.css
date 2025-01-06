@@ -92,7 +92,10 @@ justify-content: space-between;
 .burger-icon{
     
 }
+
+
 @media (min-width: 768px) {
+    }
     .container {
         max-width: 768px;
     }
@@ -146,8 +149,6 @@ justify-content: space-between;
     .telmail:focus,
     .telmail:hover{
     color: #404BBF;}
-
-}
 
 @media (min-width: 1158px){
     .container{
@@ -404,7 +405,6 @@ color: #434455;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     margin-bottom: 8px;
-    gap:
     }
     .listben-icons{
         display: block;
@@ -425,8 +425,8 @@ color: #434455;
 }
 
 
-.team{
-    height: 2232px;
+section.team{
+    max-height: 2232px;
     background-color: #F4F4FD;
 }
 .teamheader{
@@ -505,9 +505,6 @@ color: var(--slate);
 }
 /* media team */
 @media (min-width: 768px){
-    section.team{
-        height: 1224px;;
-    }
     .ls-color-i{
         display: flex;
         flex-wrap: wrap;
@@ -520,7 +517,7 @@ color: var(--slate);
 }
 @media (width: 1158px){
     main section.team{
-        height: 780px;
+        min-height: 780px;
     }
 }
     
@@ -565,7 +562,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(100%);
 }
-.overlay-text:hover{    ;
+.overlay-text:hover{
     transform: translateY(0%);
 }
 .portfolio{
@@ -710,9 +707,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .label-footer{
         margin-left: 0;
-    }
-    .footer-container-subscribe .footer-form:{
-
     }
     .footer-container-subscribe .footer-subscribe{
         text-align: left;
@@ -947,8 +941,8 @@ color: #404BBF;
     flex-direction: column;
     border-radius: 4px;
     background-color: #FCFCFC;
-    width: 288px;
-    height: 623px;
+    min-width: 288px;
+    max-height: 623px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1170,5 +1164,14 @@ input:focus + .modal-input-icon{
     fill: #F4F4FD;
     border: none;
 }
-
-
+@media (min-width: 768px){
+    .modal-overlay.is-open .modal{
+        width: 408px;
+        height: 584px;
+    }
+    .mobile-menu.is-open{
+        display: none;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
