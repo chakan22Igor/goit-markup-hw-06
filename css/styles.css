@@ -150,6 +150,8 @@ justify-content: space-between;
     .telmail:hover{
     color: #404BBF;}
 
+
+
 @media (min-width: 1158px){
     .container{
     max-width: 1440px;
@@ -206,7 +208,7 @@ justify-content: space-between;
     margin: auto;
     min-width: 320px ;
     height: 432px;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/hero-image.jpg);
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-image.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -325,7 +327,6 @@ color: #434455;
 .listben:last-child{
     margin-bottom: 96px;    
 }
-/* нажаль не розібрався як вирівняти секцію номер 2 */
 @media (min-width: 768px){
     .container .benefits{
     max-height: 312px;
@@ -440,8 +441,6 @@ section.team{
     margin: 0 auto;
 }
 .ls-color-i{
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 0;
     align-items: center;
 }
@@ -519,8 +518,10 @@ color: var(--slate);
     }
 }
 @media (width: 1158px){
-    main section.team{
+    .team .container{
+        width: 1440px;;
         min-height: 780px;
+        margin: auto;
     }
 }
     
@@ -944,6 +945,7 @@ color: #404BBF;
     flex-direction: column;
     border-radius: 4px;
     background-color: #FCFCFC;
+    min-width: 288px;
     max-height: 623px;
     top: 50%;
     left: 50%;
@@ -1167,18 +1169,7 @@ input:focus + .modal-input-icon{
     border: none;
 }
 @media (min-width: 768px){
-    .modal-overlay .modal{
-        width: 408px;
-        height: 584px;
-    }
-    .mobile-menu.is-open{
-        display: none;
-        pointer-events: none;
-        visibility: hidden;
-    }
-}
-@media (min-width: 1158px){
-    .modal-overlay .modal{
+    .modal-overlay.is-open .modal{
         width: 408px;
         height: 584px;
     }
