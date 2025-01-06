@@ -440,6 +440,8 @@ section.team{
     margin: 0 auto;
 }
 .ls-color-i{
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 0;
     align-items: center;
 }
@@ -942,7 +944,6 @@ color: #404BBF;
     flex-direction: column;
     border-radius: 4px;
     background-color: #FCFCFC;
-    min-width: 288px;
     max-height: 623px;
     top: 50%;
     left: 50%;
